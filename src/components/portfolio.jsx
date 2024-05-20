@@ -49,7 +49,11 @@ function Portfolio() {
   };
 
   const openUIUXPage = (cardNumber) => {
-    const uiuxUrls = ["https://uiux1.com", "https://uiux2.com", "https"];
+    const uiuxUrls = [
+      "https://www.figma.com/design/qyg1jxJCbfw4DjXHMyRw7v/Tabungan?node-id=48%3A58&t=ZqxIKo9ZyHZ8w9CQ-1",
+      "https://www.figma.com/design/p7PBTsRFcEQux6CQIjNGBk/Fathir-Ramdan-Maulani?node-id=0%3A1&t=r81kAOI3l92bebf2-1",
+      "https",
+    ];
     window.open(uiuxUrls[cardNumber - 1], "_blank");
   };
 
@@ -61,7 +65,7 @@ function Portfolio() {
       "Cuisine",
       "Coming Soon",
     ];
-    const uiuxTitles = ["UI/UX Design 1", "UI/UX Design 2", "Coming Soon"];
+    const uiuxTitles = ["Tabungan", "Cuisine UI", "Coming Soon"];
     if (showMiniGames) return gameTitles[cardNumber - 1];
     else if (showMiniProject) return projectTitles[cardNumber - 1];
     else return uiuxTitles[cardNumber - 1];
@@ -111,7 +115,7 @@ function Portfolio() {
                       }`}
                     >
                       <h4>{getCardTitle(cardNumber)}</h4>
-                      <button onClick={() => openGamePage(cardNumber)}>
+                      <button className="btn-c" onClick={() => openGamePage(cardNumber)}>
                         See
                       </button>
                     </div>
@@ -136,7 +140,7 @@ function Portfolio() {
                       }`}
                     >
                       <h4>{getCardTitle(cardNumber)}</h4>
-                      <button onClick={() => openProjectPage(cardNumber)}>
+                      <button className="btn-h" onClick={() => openProjectPage(cardNumber)}>
                         See
                       </button>
                     </div>
@@ -161,7 +165,7 @@ function Portfolio() {
                       }`}
                     >
                       <h4>{getCardTitle(cardNumber)}</h4>
-                      <button onClick={() => openUIUXPage(cardNumber)}>
+                      <button className="btn-p" onClick={() => openUIUXPage(cardNumber)}>
                         See
                       </button>
                     </div>

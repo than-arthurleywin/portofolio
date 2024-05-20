@@ -11,10 +11,10 @@
   display: block;
   justify-content: space-between;
   align-items: center;
-  background-color: #004d61; /* Dark cyan */
+  background-color: #004d61;
   padding: 20px;
-  color: #f4f4f9; /* Light grayish blue */
-  border-bottom: #00798c solid 1px; 
+  color: #f4f4f9;
+  border-bottom: #00798c solid 1px;
   height: 500px auto;
 }
 
@@ -37,7 +37,7 @@
 .mini-project h3 {
   margin: 10px;
   cursor: pointer;
-  color: #f4f4f9; /* Light grayish blue */
+  color: #f4f4f9;
 }
 
 .mini-project h3:hover {
@@ -67,16 +67,16 @@
 
 .cards-container {
   display: flex;
-  flex-wrap: wrap; /* Cards will wrap to the next line when space is not enough */
-  justify-content: center; /* Center the cards */
-  gap: 20px; /* Gap between cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .cards {
-  flex-basis: calc(33.33% - 20px); /* Make the cards responsive */
+  flex-basis: calc(33.33% - 20px);
   margin-bottom: 20px;
   height: 200px;
-  background-color: #3c5b6f; /* Darker cyan */
+  background-color: #3c5b6f;
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -88,7 +88,7 @@
 
 .isi {
   position: absolute;
-  bottom: -100%; /* Hide the content initially */
+  bottom: -100%;
   left: 0;
   right: 0;
   padding: 10px;
@@ -103,11 +103,11 @@
 }
 
 .cards:hover .isi {
-  bottom: 0; /* Slide up the content on hover */
+  bottom: 0;
 }
 
 .cards:hover {
-  background-color: #00798c; /* Cyan */
+  background-color: #00798c;
   transform: scale(1.03);
 }
 
@@ -122,15 +122,8 @@
 }
 
 .cards-3 {
-  background-image: url("https://via.placeholder.com/300x200/DAF7A6/000000?text=Image+3");
-}
-
-.cards-4 {
-  background-image: url("https://via.placeholder.com/300x200/00FFFF/000000?text=Image+4");
-}
-
-.cards-5 {
-  background-image: url("https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Image+5");
+  background-image: url("./img/cs.png");
+  background-size: cover;
 }
 
 .cardsi-1 {
@@ -148,24 +141,28 @@
   background-size: cover;
 }
 
+.cardsi-4 {
+  background-image: url("./img/cs.png");
+  background-size: cover;
+}
+
 .cardsu-1 {
-  background-image: url("");
+  background-image: url("./img/ui1.png");
   background-size: cover;
 }
 
 .cardsu-2 {
-  background-image: url("");
+  background-image: url("./img/ui2.png");
   background-size: cover;
 }
 
-.isi h4,
-.isi button {
-  color: #f4f4f9; /* Light grayish blue */
-  text-align: center;
+.cardsu-3 {
+  background-image: url("./img/cs.png");
+  background-size: cover;
 }
 
 .isi button {
-  background-color: #00798c; /* Cyan */
+  background-color: #00798c;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -175,8 +172,19 @@
 }
 
 .isi button:hover {
-  background-color: #004d61; /* Dark cyan */
-  border: 1px solid #f4f4f9; /* Light grayish blue */
+  background-color: #004d61;
+  border: 1px solid #f4f4f9;
+}
+
+/* Coming Soon Button Style */
+.isi button.coming-soon {
+  background-color: #a6a6a6; /* Grey */
+  cursor: not-allowed;
+}
+
+.isi button.coming-soon:hover {
+  background-color: #a6a6a6;
+  border: none;
 }
 
 @media screen and (max-width: 1024px) {
