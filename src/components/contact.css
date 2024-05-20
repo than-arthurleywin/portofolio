@@ -9,39 +9,39 @@
 }
 
 .contact {
-  background-color: #153448;
-  color: #f4f4f9;
+  background-color: #004d61; /* Dark cyan to match navbar */
+  color: #f4f4f9; /* Light grayish blue */
   padding: 40px 20px;
 }
 
 .contact h1 {
   text-align: center;
   margin-bottom: 40px;
+  color: #f4f4f9; /* Light grayish blue */
 }
 
 .contact-to {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #153448;
-  padding: 60px;
-  color: white;
-  border-bottom: #3c5b6f solid 1px;
+  align-items: flex-start; /* Changed to flex-start for better alignment */
+  background-color: #004d61; /* Dark cyan */
+  padding: 40px; /* Adjusted padding */
+  border-bottom: 1px solid #00798c; /* Cyan */
 }
 
 .left,
 .right {
-  color: #153448;
-  background-color: #f4f4f9;
-  border: #3c5b6f solid 1.3px;
+  background-color: #f4f4f9; /* Light grayish blue */
+  border: 1.3px solid #00798c; /* Cyan */
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px; /* Reduced border-radius for a cleaner look */
   width: 48%;
 }
 
 .left h4,
 .right h4 {
   margin-bottom: 20px;
+  color: #004d61; /* Dark cyan */
 }
 
 form {
@@ -51,22 +51,21 @@ form {
 
 input,
 textarea {
-  border: none;
-  width: 100%;
-  margin-bottom: 20px;
+  border: 1px solid #00798c; /* Cyan */
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 input[type="submit"] {
-  background-color: #3c5b6f;
-  color: white;
+  background-color: #00798c; /* Cyan */
+  color: #f4f4f9; /* Light grayish blue */
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #153448;
+  background-color: #004d61; /* Dark cyan */
 }
 
 iframe {
@@ -77,12 +76,19 @@ iframe {
 @media (max-width: 1024px) {
   .contact-to {
     flex-direction: column;
+    padding: 20px; /* Adjusted padding for smaller screens */
   }
 
   .left,
   .right {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-to {
+    padding: 20px;
   }
 }
 
@@ -93,5 +99,10 @@ iframe {
 
   .contact-to {
     padding: 20px;
+  }
+
+  input,
+  textarea {
+    padding: 8px; /* Adjusted padding for smaller screens */
   }
 }

@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import "./about.css";
+import html from "./img/html.png";
+import css from "./img/css.png";
+import js from "./img/js.png";
+import bs from "./img/bs.png";
+import figma from "./img/figma.png";
+import php from "./img/php.png";
 
 function About() {
   const [showAbout, setShowAbout] = useState(true);
@@ -67,20 +73,30 @@ function About() {
             )}
             {showExperience && (
               <div className="experience-content">
-                <div className="experience">
-                  <div className="experience-item">
-                    <h4>Internship at XYZ Company</h4>
-                    <p>
-                      Worked on front-end development using HTML, CSS, and
-                      JavaScript.
-                    </p>
+                <div className="experience-grid">
+                  <div className="experience-1 scale">
+                    <img src={html} alt="" />
+                    <h4>HTML</h4>
                   </div>
-                  <div className="experience-item">
-                    <h4>Volunteer Developer at ABC Organization</h4>
-                    <p>
-                      Developed and maintained the organization's website using
-                      PHP and SQL.
-                    </p>
+                  <div className="experience-2 scale">
+                    <img src={css} alt="" />
+                    <h4>CSS</h4>
+                  </div>
+                  <div className="experience-3 scale">
+                    <img src={js} alt="" />
+                    <h4>JS</h4>
+                  </div>
+                  <div className="experience-4 scale">
+                    <img src={figma} alt="" />
+                    <h4>Figma</h4>
+                  </div>
+                  <div className="experience-5 scale">
+                    <img src={php} alt="" />
+                    <h4>php</h4>
+                  </div>
+                  <div className="experience-6 scale">
+                    <img src={bs} alt="" />
+                    <h4>Bootstraps</h4>
                   </div>
                 </div>
               </div>

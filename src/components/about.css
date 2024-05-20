@@ -94,18 +94,31 @@
   text-align: left;
 }
 
-.experience {
+.experience-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-.experience-item h4 {
-  color: #ff6f61;
+.scale {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.experience-item p {
-  color: #f4f4f9;
+.scale img {
+  width: 100px;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.experience-image {
+  background-color: white;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
