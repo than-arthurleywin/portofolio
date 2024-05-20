@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d61; /* Dark cyan */
+  padding: 20px;
+  color: #f4f4f9; /* Light grayish blue */
+  border-bottom: #00798c solid 1px; 
+  height: 500px auto;
+}
+
+.portfolio h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-project h3 {
+  margin: 10px;
+  cursor: pointer;
+  color: #f4f4f9; /* Light grayish blue */
+}
+
+.mini-project h3:hover {
+  color: #ffffff9e;
+}
+
+.lines,
+.ulines {
+  height: 2px;
+  background-color: #ffffff9e;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  margin-top: 5px;
+}
+
+.lines.active,
+.ulines.active {
+  width: 140px;
+}
+
+.mini-project .miniGames,
+.mini-project .miniProject,
+.mini-project .uiux {
+  width: 140px;
+  margin: 19px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Cards will wrap to the next line when space is not enough */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Gap between cards */
+}
+
+.cards {
+  flex-basis: calc(33.33% - 20px); /* Make the cards responsive */
+  margin-bottom: 20px;
+  height: 200px;
+  background-color: #3c5b6f; /* Darker cyan */
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isi {
+  position: absolute;
+  bottom: -100%; /* Hide the content initially */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  height: 100%;
+  transition: bottom 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards:hover .isi {
+  bottom: 0; /* Slide up the content on hover */
+}
+
+.cards:hover {
+  background-color: #00798c; /* Cyan */
+  transform: scale(1.03);
+}
+
+.cards-1 {
+  background-image: url("./img/kgb.png");
+  background-size: cover;
+}
+
+.cards-2 {
+  background-image: url("./img/tebak.png");
+  background-size: cover;
+}
+
+.cards-3 {
+  background-image: url("https://via.placeholder.com/300x200/DAF7A6/000000?text=Image+3");
+}
+
+.cards-4 {
+  background-image: url("https://via.placeholder.com/300x200/00FFFF/000000?text=Image+4");
+}
+
+.cards-5 {
+  background-image: url("https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Image+5");
+}
+
+.cardsi-1 {
+  background-image: url("./img/safenet.png");
+  background-size: cover;
+}
+
+.cardsi-2 {
+  background-image: url("./img/kalkulatorimt.png");
+  background-size: cover;
+}
+
+.cardsi-3 {
+  background-image: url("./img/cuisine.png");
+  background-size: cover;
+}
+
+.cardsu-1 {
+  background-image: url("");
+  background-size: cover;
+}
+
+.cardsu-2 {
+  background-image: url("");
+  background-size: cover;
+}
+
+.isi h4,
+.isi button {
+  color: #f4f4f9; /* Light grayish blue */
+  text-align: center;
+}
+
+.isi button {
+  background-color: #00798c; /* Cyan */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.isi button:hover {
+  background-color: #004d61; /* Dark cyan */
+  border: 1px solid #f4f4f9; /* Light grayish blue */
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-basis: calc(100% - 20px);
+  }
+}

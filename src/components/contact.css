@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.contact {
+  background-color: #153448;
+  color: #f4f4f9;
+  padding: 40px 20px;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-to {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #153448;
+  padding: 60px;
+  color: white;
+  border-bottom: #3c5b6f solid 1px;
+}
+
+.left,
+.right {
+  color: #153448;
+  background-color: #f4f4f9;
+  border: #3c5b6f solid 1.3px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%;
+}
+
+.left h4,
+.right h4 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #3c5b6f;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #153448;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contact-to {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-to {
+    padding: 20px;
+  }
+}

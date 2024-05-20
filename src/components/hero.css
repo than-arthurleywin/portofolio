@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d61; /* Dark cyan */
+  padding: 20px;
+  color: #f4f4f9; /* Light grayish blue */
+  height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+.hero-text p {
+  font-weight: bold;
+}
+
+.hero-text span {
+  display: block;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.hero-text button {
+  margin-top: 20px;
+  background-color: #00798c; /* Cyan */
+  border: none;
+  color: #f4f4f9; /* Light grayish blue */
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-text button:hover {
+  background-color: #004d61; /* Dark cyan */
+  border: 1px solid #f4f4f9; /* Light grayish blue */
+}
+
+.hero-img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img-frame {
+  position: relative;
+  padding: 10px;
+  border-radius: 10%;
+  background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Coral to Yellow */
+  animation: glow 2s infinite;
+}
+
+.hero-img-frame img {
+  width: 250px;
+  border-radius: 10%;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  filter: brightness(0.8) contrast(1.2);
+}
+
+.hero-img-frame img:hover {
+  transform: scale(1.02);
+}
+
+.hero-img-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 77, 97, 0.8),
+    rgba(0, 77, 97, 0) 50%
+  );
+  pointer-events: none;
+}
+
+.orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.planet,
+.meteor {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f4f4f9; /* Light grayish blue */
+}
+
+.planet {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  animation: orbit 5s linear infinite;
+}
+
+.meteor {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  background-color: #ff6f61; /* Coral */
+  animation: orbit 2s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 110, 196, 0.5),
+      0 0 20px rgba(120, 115, 245, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 110, 196, 1), 0 0 30px rgba(120, 115, 245, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 110, 196, 0.5),
+      0 0 20px rgba(120, 115, 245, 0.5);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 70px;
+  }
+
+  .hero-img-frame img {
+    width: 200px;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+  }
+
+  .planet,
+  .meteor {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 70px;
+  }
+
+  .hero-img-frame img {
+    width: 200px;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-text button {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+
+  .hero-img-frame img {
+    width: 150px;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text button {
+    padding: 6px 12px;
+  }
+
+  .planet,
+  .meteor {
+    width: 8px;
+    height: 8px;
+  }
+
+  .planet {
+    width: 12px;
+    height: 12px;
+  }
+
+  .meteor {
+    width: 6px;
+    height: 6px;
+  }
+}

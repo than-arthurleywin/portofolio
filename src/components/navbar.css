@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f9; /* Light grayish blue */
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d61; /* Dark cyan */
+  padding: 10px 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #00798c; /* Cyan */
+}
+
+.logo a {
+  color: #f4f4f9; /* Light grayish blue */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo-highlight {
+  color: #ff6f61; /* Coral */
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  margin-right: 20px;
+}
+
+.menu p {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transition for smooth color change */
+}
+
+.menu p:hover a {
+  color: #ff6f61; /* Change text color to Coral on hover */
+}
+
+.menu-bar {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  color: #f4f4f9; /* Light grayish blue */
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  background-color: #004d61; /* Dark cyan */
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it is on top */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: visibility 0s, opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.menu-mobile.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-mobile p {
+  margin: 10px 0;
+  text-align: center;
+  transition: color 0.3s ease; /* Transition for smooth color change */
+}
+
+.menu-mobile p:hover a {
+  color: #ff6f61; /* Change text color to Coral on hover */
+}
+
+a.active {
+  color: #ff6f61; /* Change text color to Coral for active section */
+}
+
+@media screen and (max-width: 1024px) {
+  .menu p {
+    margin-right: 15px;
+  }
+
+  .logo a {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo a {
+    font-size: 16px;
+  }
+
+  .menu p {
+    margin-right: 10px;
+  }
+
+  .navbar {
+    padding: 6px 12px;
+  }
+}
