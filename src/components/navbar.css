@@ -118,6 +118,14 @@ a.active {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
   .menu {
     display: none;
   }
@@ -138,9 +146,5 @@ a.active {
 
   .menu p {
     margin-right: 10px;
-  }
-
-  .navbar {
-    padding: 6px 12px;
   }
 }
