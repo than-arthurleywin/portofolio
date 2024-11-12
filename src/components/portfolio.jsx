@@ -42,7 +42,7 @@ function Portfolio() {
     const projectUrls = [
       "https://safenet-insights.vercel.app/",
       "https://than-arthurleywin.github.io/indeksmasatubuh/",
-      "https://fthrrmdnmln.000webhostapp.com/index.html",
+      "https://i.ibb.co.com/4W5bQ6q/Desktop-2.png",
       "https://i.ibb.co.com/VNd6NDp/isi.png",
     ];
     window.open(projectUrls[cardNumber - 1], "_blank");
