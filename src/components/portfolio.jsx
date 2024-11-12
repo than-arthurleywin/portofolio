@@ -33,7 +33,7 @@ function Portfolio() {
     const gameUrls = [
       "https://than-arthurleywin.github.io/KertasGuntingBatu/",
       "https://than-arthurleywin.github.io/gametebak/",
-      "https://game3.com",
+      "https://i.ibb.co.com/VNd6NDp/isi.png",
     ];
     window.open(gameUrls[cardNumber - 1], "_blank");
   };
@@ -43,7 +43,7 @@ function Portfolio() {
       "https://safenet-insights.vercel.app/",
       "https://than-arthurleywin.github.io/indeksmasatubuh/",
       "https://fthrrmdnmln.000webhostapp.com/index.html",
-      "https://project4.com",
+      "https://i.ibb.co.com/VNd6NDp/isi.png",
     ];
     window.open(projectUrls[cardNumber - 1], "_blank");
   };
@@ -52,7 +52,7 @@ function Portfolio() {
     const uiuxUrls = [
       "https://www.figma.com/design/qyg1jxJCbfw4DjXHMyRw7v/Tabungan?node-id=48%3A58&t=ZqxIKo9ZyHZ8w9CQ-1",
       "https://www.figma.com/design/p7PBTsRFcEQux6CQIjNGBk/Fathir-Ramdan-Maulani?node-id=0%3A1&t=r81kAOI3l92bebf2-1",
-      "https",
+      "https://i.ibb.co.com/VNd6NDp/isi.png",
     ];
     window.open(uiuxUrls[cardNumber - 1], "_blank");
   };
@@ -115,7 +115,10 @@ function Portfolio() {
                       }`}
                     >
                       <h4>{getCardTitle(cardNumber)}</h4>
-                      <button className="btn-c" onClick={() => openGamePage(cardNumber)}>
+                      <button
+                        className="btn-c"
+                        onClick={() => openGamePage(cardNumber)}
+                      >
                         See
                       </button>
                     </div>
@@ -140,7 +143,10 @@ function Portfolio() {
                       }`}
                     >
                       <h4>{getCardTitle(cardNumber)}</h4>
-                      <button className="btn-h" onClick={() => openProjectPage(cardNumber)}>
+                      <button
+                        className="btn-h"
+                        onClick={() => openProjectPage(cardNumber)}
+                      >
                         See
                       </button>
                     </div>
@@ -165,7 +171,10 @@ function Portfolio() {
                       }`}
                     >
                       <h4>{getCardTitle(cardNumber)}</h4>
-                      <button className="btn-p" onClick={() => openUIUXPage(cardNumber)}>
+                      <button
+                        className="btn-p"
+                        onClick={() => openUIUXPage(cardNumber)}
+                      >
                         See
                       </button>
                     </div>
