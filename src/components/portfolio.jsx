@@ -64,6 +64,7 @@ function Portfolio() {
       "Pemberdayaan Perempuan",
       "Indeks Masa Tubuh",
       "Cuisine",
+      "Web Event",
       "Coming Soon",
     ];
     const uiuxTitles = ["Tabungan", "Cuisine UI", "Coming Soon"];
