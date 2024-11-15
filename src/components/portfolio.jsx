@@ -131,7 +131,7 @@ function Portfolio() {
           {showMiniProject && (
             <div className="portfolio-mini-project">
               <div className="cards-container">
-                {[1, 2, 3, 4].map((cardNumber) => (
+                {[1, 2, 3, 4, 5].map((cardNumber) => (
                   <div
                     key={cardNumber}
                     className={`cards cardsi-${cardNumber}`}
