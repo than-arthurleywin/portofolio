@@ -43,6 +43,7 @@ function Portfolio() {
       "https://safenet-insights.vercel.app/",
       "https://than-arthurleywin.github.io/indeksmasatubuh/",
       "https://i.ibb.co.com/4W5bQ6q/Desktop-2.png",
+      "https://event.sinaukode.my.id/",
       "https://i.ibb.co.com/VNd6NDp/isi.png",
     ];
     window.open(projectUrls[cardNumber - 1], "_blank");

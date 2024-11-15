@@ -142,10 +142,14 @@
 }
 
 .cardsi-4 {
-  background-image: url("./img/isi.png");
+  background-image: url("./img/events.png");
   background-size: cover;
 }
 
+.cardsi-5 {
+  background-image: url("./img/isi.png");
+  background-size: cover;
+}
 .cardsu-1 {
   background-image: url("./img/ui1.png");
   background-size: cover;
