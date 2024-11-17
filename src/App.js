@@ -11,10 +11,7 @@ import { useEffect } from "react";
 
 function App() {
 
-    useEffect(() => {
-      AOS.init();
-    }, []);
-
+ 
   return (
     <div className="App">
       <Navbar />

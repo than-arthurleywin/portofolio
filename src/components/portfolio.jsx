@@ -77,7 +77,7 @@ function Portfolio() {
     <div className="portfolio">
       <h1>Portfolio</h1>
       <div className="portfolio-project">
-        <div className="mini-project" data-aos="fade-down">
+        <div className="mini-project" >
           <div
             className={`miniGames ${showMiniGames ? "active" : ""}`}
             onClick={togglegame}
@@ -100,7 +100,7 @@ function Portfolio() {
             <div className={`ulines ${showUIUX ? "active" : ""}`}></div>
           </div>
         </div>
-        <div className="portfolio-cards" data-aos="fade-down">
+        <div className="portfolio-cards">
           {showMiniGames && (
             <div className="portfolio-mini-games">
               <div className="cards-container">

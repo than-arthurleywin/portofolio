@@ -24,14 +24,13 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <div className="cv" data-aos="zoom-in">
+        <div className="cv">
           <div className="cv-img">
             <h4>
               <a
                 href="https://drive.google.com/drive/folders/1SWw__eqjYT0VcZ--N2j5SLmKOKjfORK4?hl=id"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-aos="zoom-in"
               >
                 View CV
               </a>
@@ -55,7 +54,7 @@ function About() {
               Experience
             </div>
           </div>
-          <div className="content" data-aos="zoom-in" >
+          <div className="content" >
             {showAbout && (
               <div className="about-content">
                 <p>
