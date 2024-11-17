@@ -24,13 +24,14 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <div className="cv">
+        <div className="cv" data-aos="zoom-in">
           <div className="cv-img">
             <h4>
               <a
                 href="https://drive.google.com/drive/folders/1SWw__eqjYT0VcZ--N2j5SLmKOKjfORK4?hl=id"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-aos="zoom-in"
               >
                 View CV
               </a>
@@ -54,11 +55,11 @@ function About() {
               Experience
             </div>
           </div>
-          <div className="content">
+          <div className="content" data-aos="zoom-in" >
             {showAbout && (
               <div className="about-content">
                 <p>
-                  Hello, I'm Fathir Ramdan Maulani, a Grade 11 Software
+                  Hello, I'm Fathir Ramdan Maulani, a Grade 12 Software
                   Engineering 1 student who has been interested in programming
                   since Grade 10. That learning experience led to my interest in
                   web development.
